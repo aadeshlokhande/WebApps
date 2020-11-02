@@ -1,4 +1,4 @@
-"""textutils URL Configuration
+"""personalNavigator URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -19,11 +19,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index,name='index'),
-    path('about',views.about,name='about'),
-    # path('removepunc',views.removepunc,name='removepunc'),
-    path('capfirst',views.capfirst,name='capfirst'),
-    path('newlineremove',views.newlineremove,name='newlineremove'),
-    path('spaceremove',views.spaceremove,name='spaceremove'),
-    path('charcount',views.charcount,name='charcount')
+    path('',views.index, name = 'index'),
+    # path('',views.instagram, name = 'instagram'),
+    # path('',views.github, name = 'github'),
+    # path('',views.linkedin, name = 'linkedin')
 ]
